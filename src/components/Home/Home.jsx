@@ -1,5 +1,7 @@
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import "./Home.modules.css";
+import shape1 from "../../assets/assets/shape-1.png"
+import shape2 from "../../assets/assets/shape-2.png"
 
 const Home = () => {
 	return (
@@ -42,6 +44,10 @@ const Home = () => {
 					</a>
 				</div>
 			</div>
+				<img className="shape-1" src={shape1} alt="shape 1" />
+				<img className="shape-2" src={shape2} alt="shape 2" />
+				<img className="shape-3" src={shape2} alt="shape 3" />
+			
 		</section>
 	);
 };
