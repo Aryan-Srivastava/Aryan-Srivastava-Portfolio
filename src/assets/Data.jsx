@@ -54,37 +54,37 @@ export const services = [
 	{
 		id: 1,
 		name: "Web Development",
-		title: "Web Design & Logo",
+		title: "Full Time Web Developer",
 		description:
-			"Web designers craft the overall vision & plan for a website layout. Professional logo development: Business, Company, or Personal.",
+			"Design and develop websites that drive results. Building websites that are fast, secure, and built with best practices in mind.",
 	},
 	{
 		id: 2,
-		name: " Apps Development ",
-		title: " iOS & Android ",
+		name: "Freelancer",
+		title: "Freelance Developer",
 		description:
-			"Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing.",
+			" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
 	},
 	{
 		id: 3,
-		name: " Game Development ",
-		title: " Unity & Unreal Engine ",
+		name: "Freelancer",
+		title: "Freelance Developer",
 		description:
-			" Creating games & describes the design, development and release of a game. Developing unique mobile android and ios games. ",
+			" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
 	},
 	{
 		id: 4,
-		name: " Advertising ",
-		title: " Google Ads ",
+		name: "Freelancer",
+		title: "Freelance Developer",
 		description:
-			" Advertising services include: Google search result pages, gmails, YouTube and other websites participated in Google Ads program. ",
+			" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
 	},
 	{
 		id: 5,
-		name: " Music Writing ",
-		title: " Sound Track ",
+		name: "Freelancer",
+		title: "Freelance Developer",
 		description:
-			"Music copying, writing, creating, transcription and composition services.",
+			" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
 	},
 ];
 
@@ -114,16 +114,15 @@ export const skills = [
 		name: "Node.js",
 	},
 
-  {
-    id: 6,
-    name: "MongoDB",
-  },
+	{
+		id: 6,
+		name: "MongoDB",
+	},
 
-  {
-    id: 7,
-    name: "Express.js",
-  },
-
+	{
+		id: 7,
+		name: "Express.js",
+	},
 ];
 
 export const projects = [

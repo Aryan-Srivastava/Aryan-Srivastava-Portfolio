@@ -7,7 +7,7 @@
 	--text-color: hsl(0, 0%, 92%);
 	--bg-color: hsl(216, 18%, 16%);
 	--bg-color-alt: hsl(213, 10%, 21%);
-	--container-color: hsl(17, 18%, 14%);
+	--container-color: hsl(217, 18%, 14%);
 	--border-color: hsl(210, 2%, 65%);
 	--first-gradient: linear-gradient(
 		0deg,
@@ -153,4 +153,73 @@ img {
 	filter: blur(1px);
 	opacity: 1;
 	z-index: -1;
+}
+
+.section {
+	padding-bottom: 220px;
+}
+
+.section__title,
+.section__subtitle {
+	text-align: center;
+}
+
+.section__title {
+	color: var(--title-color);
+	font-size: var(--h1-font-size);
+}
+
+.section__subtitle {
+	color: var(--primary-color);
+	font-size: var(--smaller-font-size);
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.section__subtitle span {
+	font-family: var(--secondary-font);
+	color: var(--title-color);
+	font-size: var(--h3-font-size);
+	text-transform: capitalize;
+	margin-left: 10px;
+}
+
+.card {
+	background-color: var(--container-color);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.card-one {
+	padding: 30px 35px;
+	border-radius: 18px;
+}
+
+.link {
+	display: inline-flex;
+	align-items: center;
+	color: var(--title-color);
+	font-weight: 700;
+}
+
+.link__icon {
+	color: var(--primary-color);
+	margin-left: 20px;
+	transition: all 0.3s var(--transition);
+}
+
+.link:hover .link__icon {
+	margin-left: 15px;
+}
+
+.swiper-wrapper {
+	margin-bottom: 52px;
+}
+
+.c__shape {
+	filter: invert(1);
+	position: absolute;
+	right: -24px;
+	bottom: -24px;
+	width: 141px;
 }
