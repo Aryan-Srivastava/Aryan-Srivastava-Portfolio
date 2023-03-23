@@ -19,7 +19,7 @@
 		var(--bg-color-alt) 0%,
 		var(--bg-color) 100%
 	);
-	--first-gradient: linear-gradient(
+	--third-gradient: linear-gradient(
 		180deg,
 		var(--bg-color) 0%,
 		var(--bg-color) 100%
@@ -133,6 +133,7 @@ img {
 	padding-inline: 40px;
 	border-radius: 50px;
 	box-shadow: var(--shadow);
+	z-index: 2;
 }
 
 .btn::before {
@@ -145,11 +146,11 @@ img {
 	filter: blur(10px);
 	opacity: 0;
 	transition: all 0.5s var(--transition);
-	z-index: -1;
 }
 
 .btn:hover::before {
 	transform: scale(1);
 	filter: blur(1px);
 	opacity: 1;
+	z-index: -1;
 }
