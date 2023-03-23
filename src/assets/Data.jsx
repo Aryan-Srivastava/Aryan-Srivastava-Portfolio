@@ -65,27 +65,27 @@ export const services = [
 		description:
 			" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
 	},
-	{
-		id: 3,
-		name: "Freelancer",
-		title: "Freelance Developer",
-		description:
-			" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
-	},
-	{
-		id: 4,
-		name: "Freelancer",
-		title: "Freelance Developer",
-		description:
-			" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
-	},
-	{
-		id: 5,
-		name: "Freelancer",
-		title: "Freelance Developer",
-		description:
-			" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
-	},
+	// {
+	// 	id: 3,
+	// 	name: "Freelancer",
+	// 	title: "Freelance Developer",
+	// 	description:
+	// 		" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
+	// },
+	// {
+	// 	id: 4,
+	// 	name: "Freelancer",
+	// 	title: "Freelance Developer",
+	// 	description:
+	// 		" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
+	// },
+	// {
+	// 	id: 5,
+	// 	name: "Freelancer",
+	// 	title: "Freelance Developer",
+	// 	description:
+	// 		" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
+	// },
 ];
 
 export const skills = [
