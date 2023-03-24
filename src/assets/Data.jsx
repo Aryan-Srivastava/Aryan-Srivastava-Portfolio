@@ -1,9 +1,7 @@
-import Project1 from "./assets/project1.jpeg";
+import Project1 from "./assets/project1.jpg";
 import Project2 from "./assets/project2.jpg";
-import Project3 from "./assets/project3.jpeg";
-import Project4 from "./assets/project4.jpeg";
-import Project5 from "./assets/project5.jpg";
-import Project6 from "./assets/project6.jpg";
+import Project3 from "./assets/project3.jpg";
+import Project4 from "./assets/project4.jpg";
 
 export const links = [
 	{
@@ -149,50 +147,42 @@ export const projects = [
 	{
 		id: 1,
 		img: Project1,
-		category: "Branding",
-		title: "Zorro",
+		category: "Frontend",
+		title: "Admin Dashboard",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+			"Admin Dashboard is a web application that allows you to manage and visualize data. It is a single page application that is built using React.js and Material UI.",
+		github: "https://github.com/Aryan-Srivastava/Admin-Dashboard",
+		live: "https://aryan-react-admin-dashboard.netlify.app/"
 	},
 	{
 		id: 2,
 		img: Project2,
-		category: "UI UX Design",
-		title: "Gooir",
+		category: "Full Stack",
+		title: "Lyriks",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+			"Lyriks is a music web application that allows users to play favorite songs and get lyrics. It is a single page application that is built using React.js and Tailwind UI.",
+		github: "https://github.com/Aryan-Srivastava/lyriks",
+		live: "https://lyriks-music-application.netlify.app/"
 	},
 	{
 		id: 3,
 		img: Project3,
-		category: "Development",
-		title: "Explore",
+		category: "Full Stack",
+		title: "College Post",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+			"College Post is a blogging web application that allows users to post and share information regarding college. It is a single page full stack application that is built in MERN stack.",
+		github: "https://github.com/Aryan-Srivastava/College_Post",
+		live: "https://github.com/Aryan-Srivastava/College_Post"
 	},
 	{
 		id: 4,
 		img: Project4,
-		category: "Photography",
-		title: "Mozar",
+		category: "Frontend",
+		title: "Modern Bank UI Clone",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-	},
-	{
-		id: 5,
-		img: Project5,
-		category: "Development",
-		title: "Stay Fit",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-	},
-	{
-		id: 6,
-		img: Project6,
-		category: "Branding",
-		title: "Kana",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+			"Modern Bank UI Clone is a single page clone web application that is built using React.js and Tailwind CSS.",
+		github: "https://github.com/Aryan-Srivastava/Modern-Bank-Website-Clone",
+		live: "https://modern-bank-ui-site.netlify.app/"
 	},
 ];
 

@@ -1,0 +1,126 @@
+.portfolio {
+    background-image: var(--second-gradient);
+}
+
+.portfolio__list {
+	display: flex;
+	justify-content: center;
+	column-gap: 40px;
+	margin-bottom: 60px;
+}
+
+.portfolio__list-items {
+    color: var(--title-color);
+    font-size: var(--smaller-font-size);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s var(--transition);
+}
+
+.portfolio__list-items:hover {
+    color: var(--primary-color);
+}
+
+.portfolio__list-items::before {
+    content: "";
+    width: 0%;
+    position: absolute;
+    bottom: -10px;
+    left: 0%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.3s var(--transition);
+}
+
+.portfolio__list-items::after {
+    content: "";
+    width: 0%;
+    position: absolute;
+    bottom: -10px;
+    right: 0%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.3s var(--transition);
+}
+
+.active-work::before,
+.portfolio__list-items:hover::before {
+    width: 50%;
+}
+
+.active-work::after,
+.portfolio__list-items:hover::after {
+    width: 50%;
+}
+
+.active-work {
+    color: var(--primary-color);
+}
+
+.portfolio__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.5rem;
+	margin-top: 2rem;
+}
+
+.portfolio__img-wrapper {
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.portfolio__img {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	vertical-align: middle;
+    margin-bottom: 16px;
+	transition: all 0.3s ease-in-out;
+}
+
+.portfolio__img:hover {
+	opacity: 0.8;
+	scale: 1.05;
+}
+
+.portfolio__category {
+	color: var(--primary-color);
+	font-size: var(--tiny-font-size);
+	padding: 0.2rem 0.5rem;
+    background-color: var(--bg-color-alt);
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+.portfolio__category,
+.portfolio__description {
+	margin-top: 25px;
+}
+
+.portfolio__title {
+    margin-top: 8px;
+	font-size: var(--h4-font-size);
+}
+
+.portfolio__description {
+	min-height: 130px;
+}
+
+.link {
+    font-size: 18px;
+    padding-right: 10px;
+    margin-right: 6px;
+    transition: all 0.3s var(--transition);
+}
+
+.link:hover {
+    color: var(--primary-color);
+}
+
+.shape {
+    bottom: -10%;
+    opacity: 0.5;
+}
