@@ -5,12 +5,6 @@ import Project4 from "./assets/project4.jpeg";
 import Project5 from "./assets/project5.jpg";
 import Project6 from "./assets/project6.jpg";
 
-import Testimonial1 from "./assets/testimonial1.jpg";
-import Testimonial2 from "./assets/testimonial2.jpg";
-import Testimonial3 from "./assets/testimonial3.jpg";
-import Testimonial4 from "./assets/testimonial4.jpg";
-import Testimonial5 from "./assets/testimonial5.jpg";
-
 export const links = [
 	{
 		name: "Home",
@@ -56,7 +50,7 @@ export const services = [
 		name: "Web Development",
 		title: "Full Time Web Developer",
 		description:
-			"Design and develop websites that drive results. Building websites that are fast, secure, and built with best practices in mind.",
+			"Hire me as a Full time developer, I'll design and develop websites that drive results. Building websites that are fast, secure, and built with best practices in mind.",
 	},
 	{
 		id: 2,
@@ -64,6 +58,13 @@ export const services = [
 		title: "Freelance Developer",
 		description:
 			" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
+	},
+	{
+		id: 3,
+		name: "Part Time Developer",
+		title: "Part Time Developer",
+		description:
+			" Hire me as a Part Time Developer, I'll design and develop websites that drive results. Building websites that are fast, secure, and built with best practices in mind.",
 	},
 	// {
 	// 	id: 3,
@@ -92,36 +93,55 @@ export const skills = [
 	{
 		id: 1,
 		name: "HTML",
+		icon: "SiHtml5",
 	},
 
 	{
 		id: 2,
 		name: "CSS",
+		icon: "SiCss3",
 	},
 
 	{
 		id: 3,
 		name: "JavaScript",
+		icon: "SiJavascript",
 	},
 
 	{
 		id: 4,
 		name: "React.js",
+		icon: "SiReact",
 	},
 
 	{
 		id: 5,
 		name: "Node.js",
+		icon: "SiNodedotjs",
 	},
 
 	{
 		id: 6,
 		name: "MongoDB",
+		icon: "SiMongodb",
 	},
 
 	{
 		id: 7,
 		name: "Express.js",
+		icon: "SiExpress",
+	},
+
+	{
+		id: 8,
+		name: "Git",
+		icon: "SiGit",
+	},
+
+	{
+		id: 9,
+		name: "Tailwind",
+		icon: "SiTailwindcss",
 	},
 ];
 

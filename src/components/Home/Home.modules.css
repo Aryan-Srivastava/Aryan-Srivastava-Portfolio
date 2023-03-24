@@ -1,5 +1,5 @@
 .home {
-	background-image: var(--third-gradient);
+	background-image: var(--first-gradient);
 	min-height: 100vh;
 	display: grid;
 	align-items: center;

@@ -7,10 +7,6 @@
 	margin-top: 50px;
 }
 
-.section__title {
-	padding-top: 50px;
-}
-
 .services__subtitle {
 	color: var(--title-color);
 	font-size: var(--tiny-font-size);
@@ -29,45 +25,53 @@
 	min-height: 175px;
 }
 
-/* .swiper-horizontal > .swiper-pagination-bullets {
-	width: 100%;
-	position: relative;
-	display: inline-block;
+@media screen and (max-width: 1440px) {
+	.swiper-horizontal > .swiper-pagination-bullets {
+		width: 100%;
+		position: relative;
+		display: inline-block;
+	}
+
+	.swiper-horizontal > .swiper-pagination-bullets::before {
+		content: "";
+		position: absolute;
+		right: 50%;
+		top: 50%;
+		transform: translate(50%, -50%);
+		height: 2px;
+		width: 3%;
+		background-color: var(--title-color);
+	}
+
+	.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+		border: 2px solid var(--title-color);
+		background-color: var(--container-color);
+		z-index: 1;
+		position: relative;
+		opacity: 1;
+		height: 10px;
+		width: 10px;
+		margin: 0;
+		transition: all 0.3s var(--transition);
+	}
+
+	.swiper-horizontal
+		> .swiper-pagination-bullets
+		.swiper-pagination-bullet:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	.swiper-horizontal
+		> .swiper-pagination-bullets
+		.swiper-pagination-bullet-active {
+		height: 15px;
+		width: 15px;
+		background-color: var(--primary-color);
+	}
 }
 
-.swiper-horizontal > .swiper-pagination-bullets::before {
-	content: "";
-	position: absolute;
-	right: 50%;
-	top: 50%;
-	transform: translate(50%);
-	height: 2px;
-    width: 5%;
-	background-color: var(--title-color);
+@media screen and (max-width: 768px) {
+	.swiper-horizontal > .swiper-pagination-bullets::before {
+		width: 10%;
+	}
 }
-
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-	border: 2px solid var(--title-color);
-	background-color: var(--container-color);
-	z-index: 1;
-	position: relative;
-	opacity: 1;
-	height: 10px;
-	width: 10px;
-	margin: 0;
-    transition: all 0.3s var(--transition);
-}
-
-.swiper-horizontal
-	> .swiper-pagination-bullets
-	.swiper-pagination-bullet:not(:last-child) {
-	margin-right: 20px;
-}
-
-.swiper-horizontal
-	> .swiper-pagination-bullets
-	.swiper-pagination-bullet-active {
-	height: 15px;
-	width: 15px;
-	background-color: var(--primary-color);
-} */

@@ -6,7 +6,7 @@
 	--title-color: hsl(0, 0%, 100%);
 	--text-color: hsl(0, 0%, 92%);
 	--bg-color: hsl(216, 18%, 16%);
-	--bg-color-alt: hsl(213, 10%, 21%);
+	--bg-color-alt: hsl(215, 19%, 23%);
 	--container-color: hsl(217, 18%, 14%);
 	--border-color: hsl(210, 2%, 65%);
 	--first-gradient: linear-gradient(
@@ -167,6 +167,7 @@ img {
 .section__title {
 	color: var(--title-color);
 	font-size: var(--h1-font-size);
+	padding-top: 50px;
 }
 
 .section__subtitle {
@@ -174,6 +175,7 @@ img {
 	font-size: var(--smaller-font-size);
 	text-transform: uppercase;
 	font-weight: 700;
+	margin-bottom: 50px;
 }
 
 .section__subtitle span {
