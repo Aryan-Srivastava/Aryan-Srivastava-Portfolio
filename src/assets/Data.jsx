@@ -25,14 +25,6 @@ export const links = [
 		path: "resume",
 	},
 	{
-		name: "Testimonials",
-		path: "testimonial",
-	},
-	{
-		name: "Pricing",
-		path: "pricing",
-	},
-	{
 		name: "Blog",
 		path: "blog",
 	},
@@ -189,61 +181,61 @@ export const projects = [
 export const cv = [
 	{
 		id: 1,
-		title: "CoderHouse Courses",
-		subtitle: "Backend Programming",
-		date: "2014 - 2016",
+		title: "Bachelore of Technology",
+		subtitle: "School of Management and Sciences",
+		date: "2019 - 2023",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"8.19 CGPA (Till 7th Semester)",
 		category: "education",
 	},
 
 	{
 		id: 2,
-		title: "Lviv National Academy of Arts",
-		subtitle: "Faculty of Design",
-		date: "2012 - 2014",
+		title: "Intermediate",
+		subtitle: "Seventh Day Adventist Inter College",
+		date: "2018 - 2019",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"69.4%",
 		category: "education",
 	},
 
 	{
 		id: 3,
-		title: "IT Future",
-		subtitle: "High School",
-		date: "2010 - 2012",
+		title: "High School",
+		subtitle: "Seventh Day Adventist Inter College",
+		date: "2016 - 2017",
 		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"71%",
 		category: "education",
 	},
 
-	{
-		id: 4,
-		title: "UI Head & Manager",
-		subtitle: "Soft Tech Inc.",
-		date: "2020 - PRESENT",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		category: "experience",
-	},
+	// {
+	// 	id: 4,
+	// 	title: "UI Head & Manager",
+	// 	subtitle: "Soft Tech Inc.",
+	// 	date: "2020 - PRESENT",
+	// 	description:
+	// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	// 	category: "experience",
+	// },
 
-	{
-		id: 5,
-		title: "UI / UX Specialist",
-		subtitle: "Kana Design Studio",
-		date: "2018 - 2020",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		category: "experience",
-	},
+	// {
+	// 	id: 5,
+	// 	title: "UI / UX Specialist",
+	// 	subtitle: "Kana Design Studio",
+	// 	date: "2018 - 2020",
+	// 	description:
+	// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	// 	category: "experience",
+	// },
 
-	{
-		id: 6,
-		title: "Plugins Developer",
-		subtitle: "Fiverr.com",
-		date: "2016 - 2018",
-		description:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-		category: "experience",
-	},
+	// {
+	// 	id: 6,
+	// 	title: "Plugins Developer",
+	// 	subtitle: "Fiverr.com",
+	// 	date: "2016 - 2018",
+	// 	description:
+	// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	// 	category: "experience",
+	// },
 ];
