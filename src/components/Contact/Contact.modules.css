@@ -1,0 +1,111 @@
+.contact {
+	background-image: var(--second-gradient);
+}
+
+.contact__container {
+    display: grid;
+	grid-template-columns: 5fr 7fr;
+}
+
+.contact__card {
+	padding-left: 100px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.contact__card-icon,
+.contact__form-input {
+	border: 2px solid var(--border-color);
+	background-color: var(--container-color);
+}
+
+.contact__card-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: var(--shadow);
+	font-size: var(--larger-font-size);
+	display: grid;
+	place-items: center;
+}
+
+.contact__card-icon::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	width: 40px;
+	height: 2px;
+	background-color: var(--border-color);
+}
+
+.contact__card-title {
+    font-size: var(--h2-font-size);
+    font-family: var(--secondary-font);
+    padding-block: 6px;
+}
+
+.contact__card-data {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+    margin-top: -8px;
+    opacity: 0.7;
+}
+
+.contact__form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+}
+
+.contact__form-div {
+    display: grid;
+    row-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.contact__form-tag {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.contact__form-tag b {
+    color: var(--primary-color);
+}
+
+.contact__form-input {
+    height: 60px;
+    border-radius: 30px;
+    padding-inline: 30px;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+}
+
+::placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.contact__form-area .contact__form-input {
+    height: 140px;
+    padding-block: 20px;
+    resize: none;
+}
+
+.contact__submit {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.contact__submit p {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+    color: var(--primary-color);
+}
