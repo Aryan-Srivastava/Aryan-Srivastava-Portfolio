@@ -3,8 +3,9 @@
 }
 
 .service__container {
-	text-align: left;
-	margin-top: 50px;
+	text-align: center;
+	width: auto;
+	margin: auto;
 }
 
 .services__subtitle {
@@ -73,5 +74,11 @@
 @media screen and (max-width: 768px) {
 	.swiper-horizontal > .swiper-pagination-bullets::before {
 		width: 10%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.swiper-horizontal > .swiper-pagination-bullets::before {
+		width: 18%;
 	}
 }

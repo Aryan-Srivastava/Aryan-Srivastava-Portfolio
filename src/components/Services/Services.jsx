@@ -17,7 +17,7 @@ const Services = () => {
 			</p>
 			<Swiper
 				slidesPerView={1}
-				spaceBetween={10}
+				spaceBetween={30}
 				pagination={{
 					clickable: true,
 				}}
@@ -55,7 +55,7 @@ const Services = () => {
 							<p className="services__description">
 								{service.description}
 							</p>
-							<a href="" className="link">
+							<a href="#contact" className="link">
 								Contact<FaArrowRight className="link__icon" />
 							</a>
 							<img
