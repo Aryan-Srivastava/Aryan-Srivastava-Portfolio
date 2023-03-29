@@ -1,7 +1,8 @@
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import "./Home.modules.css";
-import shape1 from "../../assets/assets/shape-1.png"
-import shape2 from "../../assets/assets/shape-2.png"
+import shape1 from "../../assets/assets/shape-1.png";
+import shape2 from "../../assets/assets/shape-2.png";
+import CV from "../../assets/assets/Aryan_CV.pdf";
 
 const Home = () => {
 	return (
@@ -19,35 +20,42 @@ const Home = () => {
 
 				<p className="home__text">
 					From India. I've been working as a web developer for a year
-					now. I love working with React and Node.js. I'm also a big
-					fan of open source.
+					now. I love working with React and Node.js.
 				</p>
 
 				<div className="home__socials">
-					<a href="" className="home__social-link">
+					<a
+						href="https://www.linkedin.com/in/aryan-sri"
+						className="home__social-link"
+					>
 						<FaLinkedin />
 					</a>
-					<a href="" className="home__social-link">
+					<a
+						href="https://www.linkedin.com/in/aryan-sri"
+						className="home__social-link"
+					>
 						<FaGithub />
 					</a>
-					<a href="" className="home__social-link">
+					<a
+						href="https://twitter.com/Aryan_Sri_/"
+						className="home__social-link"
+					>
 						<FaTwitter />
 					</a>
 				</div>
 
 				<div className="home__btns">
-					<a href="" className="download-cv btn text-cs">
+					<a download href={CV} className="download-cv btn text-cs">
 						Download CV
 					</a>
-					<a href="" className="hero__link text-cs">
+					<a href="#skills" className="hero__link text-cs">
 						My Skills
 					</a>
 				</div>
 			</div>
-				<img className="shape-1" src={shape1} alt="shape 1" />
-				<img className="shape-2" src={shape2} alt="shape 2" />
-				<img className="shape-3" src={shape2} alt="shape 3" />
-			
+			<img className="shape shape-1" src={shape1} alt="shape 1" />
+			<img className="shape shape-2" src={shape2} alt="shape 2" />
+			<img className="shape shape-3" src={shape2} alt="shape 3" />
 		</section>
 	);
 };

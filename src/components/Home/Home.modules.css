@@ -3,6 +3,7 @@
 	min-height: 100vh;
 	display: grid;
 	align-items: center;
+	margin-top: 20px;
 }
 
 .home__container {
@@ -43,7 +44,7 @@
 .home__text {
 	font-size: var(--large-font-size);
 	margin-block: 30px 20px;
-	min-width: 520px;
+	max-width: 520px;
 }
 
 .home__socials {
@@ -65,16 +66,6 @@
 .home__btns {
 	display: flex;
 	column-gap: 50px;
-}
-
-.download-cv::after {
-	content: "";
-	position: absolute;
-	right: -50px;
-	transform: translate(-59%);
-	width: 31px;
-	height: 2px;
-	background-color: var(--border-color);
 }
 
 .hero__link {
