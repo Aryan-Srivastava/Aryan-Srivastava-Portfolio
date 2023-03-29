@@ -46,7 +46,7 @@ const Contact = () => {
 							<FaEnvelope />
 						</span>
 						<h3 className="contact__card-title">Email</h3>
-						<p className="contact__card-data">aryan.srivastava@gmail.com</p>
+						<p className="contact__card-data">aryan.srivastava114@gmail.com</p>
 					</div>
 				</div>
 				<form className="contact__form" onSubmit={handleSubmit}>

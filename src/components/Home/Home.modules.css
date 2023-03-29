@@ -44,7 +44,7 @@
 .home__text {
 	font-size: var(--large-font-size);
 	margin-block: 30px 20px;
-	max-width: 520px;
+	max-width: 505px;
 }
 
 .home__socials {
