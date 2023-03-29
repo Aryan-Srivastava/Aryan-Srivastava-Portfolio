@@ -2,6 +2,7 @@ import { FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 import axios from "axios";
 import "./Contact.modules.css";
+import { motion } from "framer-motion";
 
 const Contact = () => {
 	const [form, setForm] = useState({
@@ -35,23 +36,41 @@ const Contact = () => {
 	};
 	return (
 		<section className="contact section" id="contact">
-			<h2 className="section__title text-cs">Contact Me</h2>
-			<p className="section__subtitle">
-				Let's <span>talk about something</span>
-			</p>
+			<motion.div
+				initial={{ y: 150, opacity: 0 }}
+				whileInView={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.8 }}
+			>
+				<h2 className="section__title text-cs">Contact Me</h2>
+				<p className="section__subtitle">
+					Let's <span>talk about something</span>
+				</p>
+			</motion.div>
 			<div className="contact__container container grid">
 				<div className="contact__content">
-					<div className="contact__card">
+					<motion.div
+						initial={{ y: 100, opacity: 0 }}
+						whileInView={{ y: 0, opacity: 1 }}
+						transition={{ duration: 1 }}
+						className="contact__card"
+					>
 						<span className="contact__card-icon">
 							<FaEnvelope />
 						</span>
 						<h3 className="contact__card-title">Email</h3>
-						<p className="contact__card-data">aryan.srivastava114@gmail.com</p>
-					</div>
+						<p className="contact__card-data">
+							aryan.srivastava114@gmail.com
+						</p>
+					</motion.div>
 				</div>
 				<form className="contact__form" onSubmit={handleSubmit}>
 					<div className="contact__form-group grid">
-						<div className="contact__form-div">
+						<motion.div
+							initial={{ y: 100, opacity: 0 }}
+							whileInView={{ y: 0, opacity: 1 }}
+							transition={{ duration: 0.6 }}
+							className="contact__form-div"
+						>
 							<label
 								htmlFor="name"
 								className="contact__form-tag text-cs"
@@ -68,8 +87,13 @@ const Contact = () => {
 								className="contact__form-input"
 								placeholder="John Doe"
 							/>
-						</div>
-						<div className="contact__form-div">
+						</motion.div>
+						<motion.div
+							initial={{ y: 100, opacity: 0 }}
+							whileInView={{ y: 0, opacity: 1 }}
+							transition={{ duration: 0.8 }}
+							className="contact__form-div"
+						>
 							<label
 								htmlFor="email"
 								className="contact__form-tag text-cs"
@@ -86,9 +110,14 @@ const Contact = () => {
 								className="contact__form-input"
 								placeholder="johndoe@gmail.com"
 							/>
-						</div>
+						</motion.div>
 					</div>
-					<div className="contact__form-div">
+					<motion.div
+						initial={{ y: 100, opacity: 0 }}
+						whileInView={{ y: 0, opacity: 1 }}
+						transition={{ duration: 1.2 }}
+						className="contact__form-div"
+					>
 						<label
 							htmlFor="subject"
 							className="contact__form-tag text-cs"
@@ -105,8 +134,13 @@ const Contact = () => {
 							className="contact__form-input"
 							placeholder="Your subject..."
 						/>
-					</div>
-					<div className="contact__form-div contact__form-area">
+					</motion.div>
+					<motion.div
+						initial={{ y: 100, opacity: 0 }}
+						whileInView={{ y: 0, opacity: 1 }}
+						transition={{ duration: 1.5 }}
+						className="contact__form-div contact__form-area"
+					>
 						<label
 							htmlFor="message"
 							className="contact__form-tag text-cs"
@@ -123,7 +157,7 @@ const Contact = () => {
 							className="contact__form-input"
 							placeholder="I want to talk about..."
 						></textarea>
-					</div>
+					</motion.div>
 					<div className="contact__submit">
 						<p>* Required</p>
 						<button type="submit" className="btn text-cs">

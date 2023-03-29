@@ -4,6 +4,7 @@ import { links } from "../../assets/Data.jsx";
 import "./Header.modules.css";
 import { useEffect, useState } from "react";
 import { Link, animateScroll } from "react-scroll";
+import { motion } from "framer-motion";
 
 const getStorageTheme = () => {
 	let theme = "light";
@@ -63,25 +64,36 @@ const Header = () => {
 						<ul className="nav__list">
 							{links.map(({ name, path }, index) => {
 								return (
-									<li className="nav__item" key={index}>
-										<Link
-											className="nav__link text-cs"
-											spy={true}
-											smooth={true}
-											offset={-50}
-											duration={500}
-											to={path}
-											onClick={() =>
-												setShowMenu(!showMenu)
-											}
-										>
-											{name}
-										</Link>
-									</li>
+									<motion.div
+										initial={{ x: 150, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{ duration: 0.6 }}
+									>
+										<li className="nav__item" key={index}>
+											<Link
+												className="nav__link text-cs"
+												spy={true}
+												smooth={true}
+												offset={-50}
+												duration={500}
+												to={path}
+												onClick={() =>
+													setShowMenu(!showMenu)
+												}
+											>
+												{name}
+											</Link>
+										</li>
+									</motion.div>
 								);
 							})}
 						</ul>
-						<div className="header__socials">
+						<motion.div
+							initial={{ y: 150, opacity: 0 }}
+							whileInView={{ y: 0, opacity: 1 }}
+							transition={{ duration: 0.8 }}
+							className="header__socials"
+						>
 							<a href="" className="header__social-link">
 								<FaLinkedin />
 							</a>
@@ -91,7 +103,7 @@ const Header = () => {
 							<a href="" className="header__social-link">
 								<FaTwitter />
 							</a>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 				<div className="nav__btns">

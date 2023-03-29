@@ -3,6 +3,7 @@ import List from "./List";
 import { projects } from "../../assets/Data";
 import { useState } from "react";
 import "./Portfolio.modules.css";
+import { motion } from "framer-motion";
 
 const allNavList = [
 	"All",
@@ -27,14 +28,25 @@ const Portfolio = () => {
 
 	return (
 		<section className="portfolio section" id="work">
-			<h2 className="section__title text-cs">Portfolio</h2>
-			<p className="section__subtitle">
-				My <span>Projects</span>
-			</p>
+			<motion.div
+				initial={{ y: 150, opacity: 0 }}
+				whileInView={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.8 }}
+			>
+				<h2 className="section__title text-cs">Portfolio</h2>
+				<p className="section__subtitle">
+					My <span>Projects</span>
+				</p>
+			</motion.div>
 			<List list={navList} filterItems={filterItems} />
-			<div className="portfolio__container container grid">
+			<motion.div
+				initial={{ y: 150, opacity: 0 }}
+				whileInView={{ y: 0, opacity: 1 }}
+				transition={{ duration: 1.2 }}
+				className="portfolio__container container grid"
+			>
 				<Items projectItems={projectItems} />
-			</div>
+			</motion.div>
 		</section>
 	);
 };

@@ -1,9 +1,10 @@
 import "./App.css";
-import { Header, Home, Services, Skills, Portfolio, Resume, Contact, Footer } from "./components";
+import { Header, Home, Services, Skills, Portfolio, Resume, Contact, Footer, Progressbar } from "./components";
 
 function App() {
 	return (
 		<div className="App">
+			<Progressbar />
 			<Header />
 			<Home />
 			<Portfolio />

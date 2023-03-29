@@ -2,6 +2,7 @@ import React from "react";
 import "./Skills.modules.css";
 import { skills } from "../../assets/Data";
 import * as ReactIcons from "react-icons/si";
+import { motion } from "framer-motion";
 
 const Skills = () => {
 	const getIconComponent = (iconName) => {
@@ -14,11 +15,22 @@ const Skills = () => {
 
 	return (
 		<section className="skills section" id="skills">
-			<h2 className="section__title text-cs">Professional Skills</h2>
-			<p className="section__subtitle">
-				My <span>Skills</span>
-			</p>
-			<div className="skills__container container grid">
+			<motion.div
+				initial={{ y: 150, opacity: 0 }}
+				whileInView={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.8 }}
+			>
+				<h2 className="section__title text-cs">Professional Skills</h2>
+				<p className="section__subtitle">
+					My <span>Skills</span>
+				</p>
+			</motion.div>
+			<motion.div
+				initial={{ y: 150, opacity: 0 }}
+				whileInView={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.8 }}
+				className="skills__container container grid"
+			>
 				{skills.map((skill) => (
 					<div key={skill.id} className="skills__item">
 						<div className="skills__icon">
@@ -27,7 +39,7 @@ const Skills = () => {
 						<h3 className="skills__name">{skill.name}</h3>
 					</div>
 				))}
-			</div>
+			</motion.div>
 		</section>
 	);
 };

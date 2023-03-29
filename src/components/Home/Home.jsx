@@ -3,11 +3,23 @@ import "./Home.modules.css";
 import shape1 from "../../assets/assets/shape-1.png";
 import shape2 from "../../assets/assets/shape-2.png";
 import CV from "../../assets/assets/Aryan_CV.pdf";
+import { motion } from "framer-motion";
 
 const Home = () => {
 	return (
-		<section className="home" id="home">
-			<div className="home__container container">
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			transition={{ duration: 2 }}
+			className="home"
+			id="home"
+		>
+			<motion.div
+				initial={{ x: -100, opacity: 0 }}
+				animate={{ x: 0, opacity: 1 }}
+				transition={{ duration: 0.8 }}
+				className="home__container container"
+			>
 				<p className="home__subtitle text-cs">
 					Hello, <span>my name is</span>
 				</p>
@@ -52,11 +64,11 @@ const Home = () => {
 						My Skills
 					</a>
 				</div>
-			</div>
+			</motion.div>
 			<img className="shape shape-1" src={shape1} alt="shape 1" />
 			<img className="shape shape-2" src={shape2} alt="shape 2" />
 			<img className="shape shape-3" src={shape2} alt="shape 3" />
-		</section>
+		</motion.div>
 	);
 };
 

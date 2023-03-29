@@ -7,14 +7,21 @@ import "swiper/css/pagination";
 import "./Services.modules.css";
 import { Pagination } from "swiper";
 import shape2 from "../../assets/assets/shape-2.png";
+import { motion } from "framer-motion";
 
 const Services = () => {
 	return (
 		<section className="section services" id="services">
-			<h2 className="section__title text-cs">Hire Me!</h2>
-			<p className="section__subtitle">
-				My <span>Services</span>
-			</p>
+			<motion.div
+				initial={{ y: 150, opacity: 0 }}
+				whileInView={{ y: 0, opacity: 1 }}
+				transition={{ duration: 0.8 }}
+			>
+				<h2 className="section__title text-cs">Hire Me!</h2>
+				<p className="section__subtitle">
+					My <span>Services</span>
+				</p>
+			</motion.div>
 			<Swiper
 				slidesPerView={1}
 				spaceBetween={30}
@@ -37,7 +44,7 @@ const Services = () => {
 					1440: {
 						slidesPerView: 3,
 						spaceBetween: 30,
-					}
+					},
 				}}
 				modules={[Pagination]}
 				className="service__container container"
@@ -48,16 +55,25 @@ const Services = () => {
 							key={service.id}
 							className="services__item card card-one"
 						>
-							<span className="services__subtitle text-cs">
-								{service.name}
-							</span>
-							<h3 className="services__title">{service.title}</h3>
-							<p className="services__description">
-								{service.description}
-							</p>
-							<a href="#contact" className="link">
-								Contact<FaArrowRight className="link__icon" />
-							</a>
+							<motion.div
+								initial={{ y: 100, opacity: 0 }}
+								whileInView={{ y: 0, opacity: 1 }}
+								transition={{ duration: 1 }}
+							>
+								<span className="services__subtitle text-cs">
+									{service.name}
+								</span>
+								<h3 className="services__title">
+									{service.title}
+								</h3>
+								<p className="services__description">
+									{service.description}
+								</p>
+								<a href="#contact" className="link">
+									Contact
+									<FaArrowRight className="link__icon" />
+								</a>
+							</motion.div>
 							<img
 								src={shape2}
 								alt="shape"

@@ -8,3 +8,4 @@ export { default as Portfolio } from "./Portfolio/Portfolio";
 export { default as Services } from "./Services/Services";
 export { default as Resume } from "./Resume/Resume";
 export { default as Skills } from "./Skills/Skills";
+export { default as Progressbar } from "./Progressbar/Progressbar";
