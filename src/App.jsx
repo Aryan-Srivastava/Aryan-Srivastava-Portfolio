@@ -1,13 +1,17 @@
 import "./App.css";
-import { Home, Services, Skills, Portfolio } from "./components";
+import { Header, Home, Services, Skills, Portfolio, Resume, Contact, Footer } from "./components";
 
 function App() {
 	return (
-		<div>
+		<div className="App">
+			<Header />
 			<Home />
-			<Services />
-			<Skills />
 			<Portfolio />
+			<Skills />
+			<Services />
+			<Resume />
+			<Contact />
+			<Footer />
 		</div>
 	);
 }

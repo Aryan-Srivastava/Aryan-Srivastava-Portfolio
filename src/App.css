@@ -30,8 +30,8 @@
 	--secondary-font: "Caveat", cursive;
 
 	/* font size */
-	--biggest-font-size: 90px;
-	--h1-font-size: 44px;
+	--biggest-font-size: clamp(2.25rem, 1.125rem + 4.1215vw, 5.625rem);
+	--h1-font-size: clamp(1.75rem, 1.4167rem + 1.5238vw, 2.75rem);
 	--h2-font-size: 30px;
 	--h3-font-size: 28px;
 	--h4-font-size: 24px;
@@ -49,6 +49,21 @@
 
 	/* tansition */
 	--transition: cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+.light {
+	--title-color: hsl(0, 0%, 0%);
+	--text-color: #262626;
+	--bg-color: #f0ebe3;
+	--bg-color-alt: hsl(0, 0%, 98%);
+	--container-color: hsl(0, 0%, 100%);
+	--border-color: hsl(0, 0%, 0%);
+
+	--shadow: 5px 5px rgb(0 0 0 /20%);
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 *,
@@ -69,6 +84,10 @@ body {
 body {
 	color: var(--text-color);
 	background-color: var(--bg-color);
+}
+
+body.no-scroll {
+	overflow: hidden;
 }
 
 h1,
@@ -155,6 +174,10 @@ img {
 	z-index: -1;
 }
 
+.light .shape {
+	filter: invert(0);
+}
+
 .section {
 	padding-bottom: 220px;
 }
@@ -230,4 +253,8 @@ img {
 	right: -24px;
 	bottom: -24px;
 	width: 141px;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
 }
