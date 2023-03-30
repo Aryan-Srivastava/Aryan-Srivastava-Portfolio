@@ -9,16 +9,16 @@ export const links = [
 		path: "home",
 	},
 	{
-		name: "Services",
-		path: "services",
+		name: "Works",
+		path: "work",
 	},
 	{
 		name: "Skills",
 		path: "skills",
 	},
 	{
-		name: "Works",
-		path: "work",
+		name: "Services",
+		path: "services",
 	},
 	{
 		name: "Resume",

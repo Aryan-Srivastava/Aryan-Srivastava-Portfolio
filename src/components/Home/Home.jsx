@@ -43,13 +43,13 @@ const Home = () => {
 						<FaLinkedin />
 					</a>
 					<a
-						href="https://www.linkedin.com/in/aryan-sri"
+						href="https://github.com/Aryan-Srivastava"
 						className="home__social-link"
 					>
 						<FaGithub />
 					</a>
 					<a
-						href="https://twitter.com/Aryan_Sri_/"
+						href="https://twitter.com/Aryan_Sri_"
 						className="home__social-link"
 					>
 						<FaTwitter />

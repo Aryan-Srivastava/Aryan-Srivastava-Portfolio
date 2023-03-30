@@ -94,13 +94,13 @@ const Header = () => {
 							transition={{ duration: 0.8 }}
 							className="header__socials"
 						>
-							<a href="" className="header__social-link">
+							<a href="https://www.linkedin.com/in/aryan-sri" className="header__social-link">
 								<FaLinkedin />
 							</a>
-							<a href="" className="header__social-link">
+							<a href="https://github.com/Aryan-Srivastava" className="header__social-link">
 								<FaGithub />
 							</a>
-							<a href="" className="header__social-link">
+							<a href="https://twitter.com/Aryan_Sri_" className="header__social-link">
 								<FaTwitter />
 							</a>
 						</motion.div>
