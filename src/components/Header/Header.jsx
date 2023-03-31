@@ -68,8 +68,9 @@ const Header = () => {
 										initial={{ x: 150, opacity: 0 }}
 										whileInView={{ x: 0, opacity: 1 }}
 										transition={{ duration: 0.6 }}
+										key={index}
 									>
-										<li className="nav__item" key={index}>
+										<li className="nav__item">
 											<Link
 												className="nav__link text-cs"
 												spy={true}

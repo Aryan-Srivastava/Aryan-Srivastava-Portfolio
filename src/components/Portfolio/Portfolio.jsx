@@ -9,7 +9,6 @@ const allNavList = [
 	"All",
 	...new Set(projects.map((project) => project.category)),
 ];
-console.log(allNavList);
 
 const Portfolio = () => {
 	const [projectItems, setProjectItems] = useState(projects);

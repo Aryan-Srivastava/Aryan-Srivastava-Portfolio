@@ -6,13 +6,13 @@ const Footer = () => {
 		<footer className="footer">
 			<div className="footer__container container social">
 				<div className="footer__socials">
-					<a href="" className="footer__social-link">
+					<a href="https://www.linkedin.com/in/aryan-sri" className="footer__social-link">
 						<FaLinkedin />
 					</a>
-					<a href="" className="footer__social-link">
+					<a href="https://github.com/Aryan-Srivastava" className="footer__social-link">
 						<FaGithub />
 					</a>
-					<a href="" className="footer__social-link">
+					<a href="https://twitter.com/Aryan_Sri_" className="footer__social-link">
 						<FaTwitter />
 					</a>
 				</div>
@@ -20,7 +20,7 @@ const Footer = () => {
 
 			<p className="footer__copyright text-cs">
 				&copy; 2023 Developed with ❤️ by{" "}
-				<a href="" className="footer__link">
+				<a href="https://github.com/Aryan-Srivastava" className="footer__link">
 					Aryan Srivastava
 				</a>
 			</p>

@@ -11,9 +11,9 @@ const List = ({ list, filterItems }) => {
 						initial={{ y: 150, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ duration: 0.8 }}
+						key={index}
 					>
 						<button
-							key={index}
 							className={`${
 								active === index ? "active-work" : ""
 							} portfolio__list-items text-cs`}
