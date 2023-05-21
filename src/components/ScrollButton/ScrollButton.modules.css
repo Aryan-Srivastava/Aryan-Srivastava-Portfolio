@@ -1,0 +1,29 @@
+.scroll-btn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.scroll-button {
+    height: var(--h2-font-size);
+	width: var(--h2-font-size);
+	fill: var(--primary-color);
+    transition: all 0.5s var(--transition);
+	animation: up-and-down 0.5s linear infinite alternate-reverse;
+}
+
+@keyframes up-and-down {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-5px);
+	}
+}
+
+.scroll-button:hover {
+    fill: var(--title-color);
+    transform: translateY(-5px);
+}

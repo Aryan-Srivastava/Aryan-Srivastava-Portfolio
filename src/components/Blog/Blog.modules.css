@@ -1,0 +1,121 @@
+.blog {
+	background-image: var(--second-gradient);
+}
+
+.blog__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+.blog__item {
+	max-width: 400px;
+	height: 350px;
+}
+
+.blog__date {
+	display: block;
+	color: var(--title-color);
+	font-size: var(--tiny-font-size);
+	margin-bottom: 15px;
+	font-weight: 500;
+}
+
+.blog__title {
+	color: var(--title-color);
+	cursor: pointer;
+	font-size: var(--h4-font-size);
+	margin-bottom: 10px;
+	line-height: 1.3;
+	transition: all 0.3s var(--transition);
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-break: break-all;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.blog__title:hover {
+	color: var(--primary-color);
+}
+
+.blog__description {
+	color: var(--text-color);
+	font-size: var(--small-font-size);
+	margin-bottom: 10px;
+	height: 70px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+.link {
+	margin-top: 16px;
+}
+
+.blog__img-wrapper {
+	max-width: 350px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.blog__img {
+	margin-top: 16px;
+	height: 180px;
+	width: 300px;
+	border-radius: 20px;
+	object-fit: cover;
+	vertical-align: middle;
+	cursor: pointer;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.blog__img:hover {
+	opacity: 0.8;
+	scale: 1.05;
+}
+
+.see__more {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	color: var(--text-color);
+	font-size: var(--normal-font-size);
+	font-weight: 700;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-right: 120px;
+	margin-bottom: 16px;
+	margin-top: -32px;
+}
+
+.see__more-icon {
+	margin-left: 10px;
+	color: var(--primary-color);
+	transition: all 0.3s var(--transition);
+}
+
+.see__more:hover .see__more-icon {
+	transform: translateX(-5px);
+}
+
+.see__more:hover {
+	color: var(--primary-color);
+}
+
+@media screen and (max-width: 960px) {
+	.see__more {
+		margin-right: 100px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.see__more {
+		margin-right: 30px;
+	}
+}

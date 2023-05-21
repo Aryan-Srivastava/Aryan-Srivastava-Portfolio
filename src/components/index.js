@@ -1,4 +1,5 @@
 export { default as Blog } from "./Blog/Blog";
+export { default as BlogCard } from "./BlogCard/BlogCard";
 export { default as Contact } from "./Contact/Contact";
 export { default as Footer } from "./Footer/Footer";
 export { default as Header } from "./Header/Header";
@@ -8,3 +9,6 @@ export { default as Services } from "./Services/Services";
 export { default as Resume } from "./Resume/Resume";
 export { default as Skills } from "./Skills/Skills";
 export { default as Progressbar } from "./Progressbar/Progressbar";
+export { default as ScrollButton } from "./ScrollButton/ScrollButton";
+export { default as LatestBlog } from "./LatestBlog/LatestBlog";
+export { default as Loader } from "./Loader/Loader";

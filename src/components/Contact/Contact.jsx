@@ -1,8 +1,8 @@
-import { FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 import axios from "axios";
-import "./Contact.modules.css";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
+import "./Contact.modules.css";
 
 const Contact = () => {
 	const [form, setForm] = useState({
@@ -11,29 +11,47 @@ const Contact = () => {
 		subject: "",
 		message: "",
 	});
+	const [isSending, setIsSending] = useState(false);
 
 	const handleChange = (e) => {
 		const { name, value } = e.target;
 		setForm({ ...form, [name]: value });
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
+		setIsSending(true);
 		try {
-			axios
-				.post(import.meta.env.VITE_SHEET_CONNECTION_URL, form)
-				.then(() => {
-					setForm({
-						name: "",
-						email: "",
-						subject: "",
-						message: "",
-					});
+			const sendMailSheets = () => {
+				axios.post(import.meta.env.VITE_SHEET_CONNECTION_URL, form);
+			};
+
+			const sendMailEmailJs = () => {
+				emailjs.sendForm(
+					import.meta.env.VITE_EMAILJS_SERVICE_ID,
+					import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+					e.target,
+					import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+				);
+			};
+
+			await Promise.allSettled([
+				sendMailSheets(),
+				sendMailEmailJs(),
+			]).then(() => {
+				setForm({
+					name: "",
+					email: "",
+					subject: "",
+					message: "",
 				});
+				setIsSending(false);
+			});
 		} catch (error) {
 			console.log(error);
 		}
 	};
+
 	return (
 		<section className="contact section" id="contact">
 			<motion.div
@@ -55,7 +73,9 @@ const Contact = () => {
 						className="contact__card"
 					>
 						<span className="contact__card-icon">
-							<FaEnvelope />
+							<svg className="mail__icon">
+								<use href="sprite.svg#icon-mail"></use>
+							</svg>
 						</span>
 						<h3 className="contact__card-title">Email</h3>
 						<p className="contact__card-data">
@@ -160,8 +180,12 @@ const Contact = () => {
 					</motion.div>
 					<div className="contact__submit">
 						<p>* Required</p>
-						<button type="submit" className="btn text-cs">
-							Send Mail
+						<button
+							type="submit"
+							className="btn text-cs"
+							disabled={isSending}
+						>
+							{isSending ? "Sending....." : "Send Message"}
 						</button>
 					</div>
 				</form>

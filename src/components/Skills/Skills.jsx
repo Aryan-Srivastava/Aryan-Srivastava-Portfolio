@@ -1,7 +1,6 @@
 import React from "react";
 import "./Skills.modules.css";
 import { skills } from "../../assets/Data";
-import * as ReactIcons from "react-icons/si";
 import { motion } from "framer-motion";
 
 const Skills = () => {
@@ -33,9 +32,9 @@ const Skills = () => {
 			>
 				{skills.map((skill) => (
 					<div key={skill.id} className="skills__item">
-						<div className="skills__icon">
-							{getIconComponent(skill.icon)}
-						</div>
+						<svg className="skills__icon">
+							<use href={`sprite.svg#icon-${skill.icon}`}></use>
+						</svg>
 						<h3 className="skills__name">{skill.name}</h3>
 					</div>
 				))}

@@ -1,7 +1,7 @@
-import Project1 from "./assets/project1.jpg";
-import Project2 from "./assets/project2.jpg";
-import Project3 from "./assets/project3.jpg";
-import Project4 from "./assets/project4.jpg";
+import Project1 from "./assets/project1.webp";
+import Project2 from "./assets/project2.webp";
+import Project3 from "./assets/project3.webp";
+import Project4 from "./assets/project4.webp";
 
 export const links = [
 	{
@@ -56,82 +56,61 @@ export const services = [
 		description:
 			" Hire me as a Part Time Developer, I'll design and develop websites that drive results. Building websites that are fast, secure, and built with best practices in mind.",
 	},
-	// {
-	// 	id: 3,
-	// 	name: "Freelancer",
-	// 	title: "Freelance Developer",
-	// 	description:
-	// 		" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
-	// },
-	// {
-	// 	id: 4,
-	// 	name: "Freelancer",
-	// 	title: "Freelance Developer",
-	// 	description:
-	// 		" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
-	// },
-	// {
-	// 	id: 5,
-	// 	name: "Freelancer",
-	// 	title: "Freelance Developer",
-	// 	description:
-	// 		" Have something on mind and want someone to develope that, hire me as a Freelance Developer for your project. I am available for full time and part time work.",
-	// },
 ];
 
 export const skills = [
 	{
 		id: 1,
 		name: "HTML",
-		icon: "SiHtml5",
+		icon: "html5",
 	},
 
 	{
 		id: 2,
 		name: "CSS",
-		icon: "SiCss3",
+		icon: "css3",
 	},
 
 	{
 		id: 3,
 		name: "JavaScript",
-		icon: "SiJavascript",
+		icon: "javascript",
 	},
 
 	{
 		id: 4,
 		name: "React.js",
-		icon: "SiReact",
+		icon: "react",
 	},
 
 	{
 		id: 5,
 		name: "Node.js",
-		icon: "SiNodedotjs",
+		icon: "node-dot-js",
 	},
 
 	{
 		id: 6,
 		name: "MongoDB",
-		icon: "SiMongodb",
+		icon: "mongodb",
 	},
 
 	{
 		id: 7,
 		name: "Express.js",
-		icon: "SiExpress",
+		icon: "express",
 	},
 
 	{
 		id: 8,
 		name: "Git",
-		icon: "SiGit",
+		icon: "git",
 	},
 
 	{
 		id: 9,
-		name: "Tailwind",
-		icon: "SiTailwindcss",
+		name: "TailwindCSS",
+		icon: "tailwindcss",
 	},
 ];
 
@@ -207,35 +186,5 @@ export const cv = [
 		description:
 			"71%",
 		category: "education",
-	},
-
-	// {
-	// 	id: 4,
-	// 	title: "UI Head & Manager",
-	// 	subtitle: "Soft Tech Inc.",
-	// 	date: "2020 - PRESENT",
-	// 	description:
-	// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	// 	category: "experience",
-	// },
-
-	// {
-	// 	id: 5,
-	// 	title: "UI / UX Specialist",
-	// 	subtitle: "Kana Design Studio",
-	// 	date: "2018 - 2020",
-	// 	description:
-	// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	// 	category: "experience",
-	// },
-
-	// {
-	// 	id: 6,
-	// 	title: "Plugins Developer",
-	// 	subtitle: "Fiverr.com",
-	// 	date: "2016 - 2018",
-	// 	description:
-	// 		"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	// 	category: "experience",
-	// },
+	}
 ];

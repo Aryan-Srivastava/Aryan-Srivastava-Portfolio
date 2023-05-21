@@ -1,0 +1,80 @@
+.SingleBlog__container {
+	padding-top: 7rem;
+	max-width: 800px;
+	margin: 0 auto;
+	padding-inline: 1rem;
+}
+
+.main__image {
+	border-radius: 5px;
+	width: 800px;
+	height: auto;
+}
+
+.blog__header {
+	font-size: var(--h1-font-size);
+	font-weight: 700;
+	margin: 1rem;
+	line-height: 1.1;
+}
+
+.about__blog {
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem;
+}
+
+.about__blog > * {
+	align-items: flex-end;
+	display: flex;
+}
+
+.about__blog span {
+	font-size: var(--largest-font-size);
+}
+
+.blog__desc {
+	font-size: var(--larger-font-size);
+	margin: 2rem;
+}
+
+.blogtag {
+	color: var(--primary-color);
+	font-weight: 500;
+	font-size: var(--tiny-font-size);
+	margin-right: 1rem;
+	background-color: var(--bg-color-alt);
+	padding-inline: 5px;
+	border-radius: 5px;
+}
+
+
+.divider {
+	margin-block: 2rem;
+	border: 1px solid var(--primary-color);
+}
+
+.my-bullet-li-class,
+.my-number-li-class {
+	margin-left: 3rem;
+	line-height: 1.5;
+	font-size: var(--larger-font-size);
+	margin-block: 1rem;
+}
+
+.my-bullet-li-class {
+	list-style-type: disc;
+}
+
+.my-number-li-class {
+	list-style-type: decimal;
+}
+
+.my-code-block-class {
+	background-color: #f7f7f7;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-family: monospace;
+	font-size: 14px;
+	padding: 1rem;
+}

@@ -1,0 +1,49 @@
+.latestblog__window {
+	position: fixed;
+	bottom: 30px;
+	right: 10px;
+	height: 150px;
+	width: 200px;
+	padding-inline: 10px;
+	cursor: pointer;
+	z-index: 10;
+	transition: all 0.5s var(--transition);
+}
+
+.latestblog__close {
+	position: absolute;
+	top: -4px;
+	right: 10px;
+	height: 1rem;
+	width: 1rem;
+	fill: var(--title-color);
+	cursor: pointer;
+}
+
+.latestblog__image {
+    border-radius: 8px;
+	width: 100%;
+	height: auto;
+    overflow: hidden;
+}
+
+.latestblog__window:hover {
+	opacity: 0.8;
+}
+
+.latestblog__title {
+	color: var(--primary-color);
+	font-size: var(--small-font-size);
+	margin-bottom: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.read__latest {
+    margin-left: 40px;
+    color: var(--text-color);
+    font-size: var(--tiny-font-size);
+}

@@ -1,12 +1,10 @@
-import React from "react";
 import { services } from "../../assets/Data";
-import { FaArrowRight } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Services.modules.css";
 import { Pagination } from "swiper";
-import shape2 from "../../assets/assets/shape-2.png";
+import shape1 from "../../assets/assets/shape-1.png";
 import { motion } from "framer-motion";
 
 const Services = () => {
@@ -58,7 +56,7 @@ const Services = () => {
 							<motion.div
 								initial={{ y: 100, opacity: 0 }}
 								whileInView={{ y: 0, opacity: 1 }}
-								transition={{ duration: 1 }}
+								transition={{ duration: 0.8 }}
 							>
 								<span className="services__subtitle text-cs">
 									{service.name}
@@ -71,11 +69,13 @@ const Services = () => {
 								</p>
 								<a href="#contact" className="link">
 									Contact
-									<FaArrowRight className="link__icon" />
+									<svg className="link__icon">
+										<use href="sprite.svg#icon-arrow-right2"></use>
+									</svg>
 								</a>
 							</motion.div>
 							<img
-								src={shape2}
+								src={shape1}
 								alt="shape"
 								className="shape c__shape"
 							/>

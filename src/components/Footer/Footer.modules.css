@@ -1,4 +1,5 @@
 .footer {
+	background-image: var(--second-gradient);
 	border-top: 1px solid rgba(255, 255, 255, 0.05);
 	padding-block: 60px;
 	display: grid;
@@ -54,4 +55,35 @@
 
 .footer__link:hover::before {
     width: 100%;
+}
+
+@media (max-width: 767px) {
+	.footer {
+		grid-template-columns: repeat(2, 1fr);
+		padding-block: 40px;
+		place-items: center;
+	}
+	.footer__social-link {
+		font-size: var(--small-font-size);
+	}
+	.footer__link {
+		font-size: var(--small-font-size);
+	}
+	.footer__container {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
+
+@media (max-width: 350px) {
+	.footer__container {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	.footer__link {
+		font-size: var(--tiny-font-size);
+	}
+	.footer__social-link {
+		font-size: var(--tiny-font-size);
+	}
 }

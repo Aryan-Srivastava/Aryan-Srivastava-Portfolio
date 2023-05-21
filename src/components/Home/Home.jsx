@@ -1,7 +1,5 @@
-import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import "./Home.modules.css";
 import shape1 from "../../assets/assets/shape-1.png";
-import shape2 from "../../assets/assets/shape-2.png";
 import CV from "../../assets/assets/Aryan_CV.pdf";
 import { motion } from "framer-motion";
 
@@ -39,20 +37,29 @@ const Home = () => {
 					<a
 						href="https://www.linkedin.com/in/aryan-sri"
 						className="home__social-link"
+						aria-label="LinkedIn"
 					>
-						<FaLinkedin />
+						<svg className="svg__icons">
+							<use href="sprite.svg#icon-linkedin"></use>
+						</svg>
 					</a>
 					<a
 						href="https://github.com/Aryan-Srivastava"
 						className="home__social-link"
+						aria-label="Github"
 					>
-						<FaGithub />
+						<svg className="svg__icons">
+							<use href="sprite.svg#icon-github"></use>
+						</svg>
 					</a>
 					<a
 						href="https://twitter.com/Aryan_Sri_"
 						className="home__social-link"
+						aria-label="Twitter"
 					>
-						<FaTwitter />
+						<svg className="svg__icons">
+							<use href="sprite.svg#icon-twitter"></use>
+						</svg>
 					</a>
 				</div>
 
@@ -66,8 +73,8 @@ const Home = () => {
 				</div>
 			</motion.div>
 			<img className="shape shape-1" src={shape1} alt="shape 1" />
-			<img className="shape shape-2" src={shape2} alt="shape 2" />
-			<img className="shape shape-3" src={shape2} alt="shape 3" />
+			<img className="shape shape-2" src={shape1} alt="shape 2" />
+			<img className="shape shape-3" src={shape1} alt="shape 3" />
 		</motion.div>
 	);
 };

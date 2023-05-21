@@ -1,5 +1,3 @@
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
-import { BiSun, BiMoon } from "react-icons/bi";
 import { links } from "../../assets/Data.jsx";
 import "./Header.modules.css";
 import { useEffect, useState } from "react";
@@ -7,7 +5,7 @@ import { Link, animateScroll } from "react-scroll";
 import { motion } from "framer-motion";
 
 const getStorageTheme = () => {
-	let theme = "light";
+	let theme = "radioactive";
 	if (localStorage.getItem("theme")) {
 		theme = localStorage.getItem("theme");
 	}
@@ -17,6 +15,7 @@ const getStorageTheme = () => {
 const Header = () => {
 	const [showMenu, setShowMenu] = useState(false);
 	const [scrollNav, setScrollNav] = useState(false);
+	const [showNavbar, setShowNavbar] = useState(true);
 	const [theme, setTheme] = useState(getStorageTheme());
 
 	const scrollTop = () => {
@@ -44,14 +43,22 @@ const Header = () => {
 		localStorage.setItem("theme", theme);
 	}, [theme]);
 
+	useEffect(() => {
+		const currentPage = window.location.pathname;
+		if (currentPage !== "/") {
+			setShowNavbar(false);
+		}
+	}, []);
+
 	return (
 		<header className={`${scrollNav ? "scroll-header" : ""} header`}>
+			<div className={`${showMenu ? 'overlay' : ''}`} onClick={() => setShowMenu(false)}></div>
 			<nav className="nav">
 				<Link
 					to="/"
-					href=""
 					className="nav__logo text-cs"
 					onClick={scrollTop}
+					aria-label="Aryan"
 				>
 					<span className="text-cs--primary">A</span>ryan
 				</Link>
@@ -64,13 +71,12 @@ const Header = () => {
 						<ul className="nav__list">
 							{links.map(({ name, path }, index) => {
 								return (
-									<motion.div
-										initial={{ x: 150, opacity: 0 }}
-										whileInView={{ x: 0, opacity: 1 }}
-										transition={{ duration: 0.6 }}
-										key={index}
-									>
-										<li className="nav__item">
+									<li className="nav__item" key={index}>
+										<motion.div
+											initial={{ x: 150, opacity: 0 }}
+											whileInView={{ x: 0, opacity: 1 }}
+											transition={{ duration: 0.6 }}
+										>
 											<Link
 												className="nav__link text-cs"
 												spy={true}
@@ -84,8 +90,8 @@ const Header = () => {
 											>
 												{name}
 											</Link>
-										</li>
-									</motion.div>
+										</motion.div>
+									</li>
 								);
 							})}
 						</ul>
@@ -95,14 +101,32 @@ const Header = () => {
 							transition={{ duration: 0.8 }}
 							className="header__socials"
 						>
-							<a href="https://www.linkedin.com/in/aryan-sri" className="header__social-link">
-								<FaLinkedin />
+							<a
+								href="https://www.linkedin.com/in/aryan-sri"
+								className="header__social-link"
+								aria-label="LinkedIn"
+							>
+								<svg className="svg__icons">
+									<use href="sprite.svg#icon-linkedin"></use>
+								</svg>
 							</a>
-							<a href="https://github.com/Aryan-Srivastava" className="header__social-link">
-								<FaGithub />
+							<a
+								href="https://github.com/Aryan-Srivastava"
+								className="header__social-link"
+								aria-label="Github"
+							>
+								<svg className="svg__icons">
+									<use href="sprite.svg#icon-github"></use>
+								</svg>
 							</a>
-							<a href="https://twitter.com/Aryan_Sri_" className="header__social-link">
-								<FaTwitter />
+							<a
+								href="https://twitter.com/Aryan_Sri_"
+								className="header__social-link"
+								aria-label="Twitter"
+							>
+								<svg className="svg__icons">
+									<use href="sprite.svg#icon-twitter"></use>
+								</svg>
 							</a>
 						</motion.div>
 					</div>
@@ -111,23 +135,44 @@ const Header = () => {
 					<div
 						className="theme__toggler"
 						onClick={() =>
-							setTheme(theme === "light" ? "dark" : "light")
+							setTheme(
+								theme === "midday"
+									? "radioactive"
+									: theme === "radioactive"
+									? "light"
+									: "midday"
+							)
 						}
 					>
-						{theme === "light" ? <BiMoon /> : <BiSun />}
+						{theme === "light" ? (
+							<svg className="theme__icons">
+								<use href="sprite.svg#icon-sun"></use>
+							</svg>
+						) : theme === "radioactive" ? (
+							<svg className="theme__icons">
+								<use href="sprite.svg#icon-moon"></use>
+							</svg>
+						) : (
+							<svg className="theme__icons">
+								<use href="sprite.svg#icon-dawn"></use>
+							</svg>
+						)}
 					</div>
-					<div
-						className={`${
-							showMenu
-								? "nav__toggle animate-toggle"
-								: "nav__toggle"
-						}`}
-						onClick={() => setShowMenu(!showMenu)}
-					>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+
+					{showNavbar && (
+						<div
+							className={`${
+								showMenu
+									? "nav__toggle animate-toggle"
+									: "nav__toggle"
+							}`}
+							onClick={() => setShowMenu(!showMenu)}
+						>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					)}
 				</div>
 			</nav>
 		</header>

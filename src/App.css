@@ -1,25 +1,33 @@
 @font-face {
 	font-family: "Jost";
-	src: url("../public/fonts/jost-regular.woff2") format("woff2");
+	src: url("/fonts/jost-regular.woff2") format("woff2");
 	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
 }
 
 @font-face {
 	font-family: "Jost";
-	src: url("../public/fonts/jost-medium.woff2") format("woff2");
+	src: url("/fonts/jost-medium.woff2") format("woff2");
 	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
 }
 
 @font-face {
 	font-family: "Jost";
-	src: url("../public/fonts/jost-semibold.woff2") format("woff2");
+	src: url("/fonts/jost-semibold.woff2") format("woff2");
 	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
 }
 
 @font-face {
 	font-family: "Caveat";
-	src: url("../public/fonts/caveat-bold.woff2") format("woff2");
+	src: url("/fonts/caveat-bold.woff2") format("woff2");
 	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
 }
 
 :root {
@@ -54,7 +62,7 @@
 	/* font size */
 	--biggest-font-size: clamp(2.25rem, 1.125rem + 4.1215vw, 5.625rem);
 	--h1-font-size: clamp(1.75rem, 1.4167rem + 1.5238vw, 2.75rem);
-	--h2-font-size: 30px;
+	--h2-font-size: 32px;
 	--h3-font-size: 28px;
 	--h4-font-size: 24px;
 	--h5-font-size: 22px;
@@ -73,8 +81,8 @@
 	--transition: cubic-bezier(0.3, 0, 0.3, 1);
 }
 
-.light {
-	--title-color: hsl(0, 0%, 0%);
+.midday {
+	--title-color: #000000;
 	--text-color: #262626;
 	--bg-color: #f0ebe3;
 	--bg-color-alt: hsl(0, 0%, 98%);
@@ -82,6 +90,18 @@
 	--border-color: hsl(0, 0%, 0%);
 
 	--shadow: 5px 5px rgb(0 0 0 /20%);
+}
+
+.light {
+	--primary-color: #843cf2;
+	--title-color: #163068;
+	--text-color: #303339;
+	--bg-color: #eef3fd;
+	--bg-color-alt: #dee1fd;
+	--container-color: #eef2fd;
+	--border-color: #415191;
+
+	--shadow: 5px 5px rgba(147, 140, 232, 0.695);
 }
 
 html {
@@ -197,6 +217,10 @@ img {
 }
 
 .light .shape {
+	filter: invert(0.5);
+}
+
+.midday .shape {
 	filter: invert(0);
 }
 
@@ -256,8 +280,10 @@ img {
 }
 
 .link__icon {
-	color: var(--primary-color);
+	fill: var(--primary-color);
 	margin-left: 20px;
+	height: 1.1rem;
+	width: 1.1rem;
 	transition: all 0.3s var(--transition);
 }
 
@@ -277,6 +303,77 @@ img {
 	width: 141px;
 }
 
+@media screen and (max-width: 1440px) {
+	.swiper-horizontal > .swiper-pagination-bullets {
+		width: 100%;
+		position: relative;
+		display: inline-block;
+	}
+
+	.swiper-horizontal > .swiper-pagination-bullets::before {
+		content: "";
+		position: absolute;
+		right: 50%;
+		top: 50%;
+		transform: translate(50%, -50%);
+		height: 2px;
+		width: 4%;
+		background-color: var(--title-color);
+	}
+
+	.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+		border: 2px solid var(--title-color);
+		background-color: var(--container-color);
+		z-index: 1;
+		position: relative;
+		opacity: 1;
+		height: 10px;
+		width: 10px;
+		margin: 0;
+		transition: all 0.3s var(--transition);
+	}
+
+	.swiper-horizontal
+		> .swiper-pagination-bullets
+		.swiper-pagination-bullet:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	.swiper-horizontal
+		> .swiper-pagination-bullets
+		.swiper-pagination-bullet-active {
+		height: 15px;
+		width: 15px;
+		background-color: var(--primary-color);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.swiper-horizontal > .swiper-pagination-bullets::before {
+		width: 21%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.swiper-horizontal > .swiper-pagination-bullets::before {
+		width: 20%;
+	}
+}
+
 ::-webkit-scrollbar {
-	width: 0px;
+	width: 8px;
+	background: linear-gradient(
+		45deg,
+		var(--bg-color-alt),
+		var(--bg-color)
+	);
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(
+		45deg,
+		var(--primary-color),
+		var(--bg-color)
+	);
+	border-radius: 20px;
 }

@@ -1,5 +1,5 @@
 .contact {
-	background-image: var(--second-gradient);
+	background-image: var(--first-gradient);
 }
 
 .contact__container {
@@ -36,6 +36,12 @@
 	font-size: var(--larger-font-size);
 	display: grid;
 	place-items: center;
+}
+
+.mail__icon {
+	height: 1.6rem;
+	width: 1.6rem;
+	fill: var(--primary-color);
 }
 
 .contact__card-icon::after {

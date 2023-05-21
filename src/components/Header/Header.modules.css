@@ -1,85 +1,99 @@
 .header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: 30px;
-    z-index: 100;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 30px;
+	z-index: 100;
 }
 
 .scroll-header {
-    position: fixed;
-    background-color: var(--bg-color-alt);
-    opacity: 0.9;
-    padding: 20px;
-    animation: header_animate 0.8s var(--transition) 0s forwards;
+	position: fixed;
+	background-color: var(--bg-color-alt);
+	opacity: 0.9;
+	padding: 20px;
+	animation: header_animate 0.8s var(--transition) 0s forwards;
 }
 
 @keyframes header_animate {
-    0% {
-        transform: translateY(-100px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0);
+	}
 }
 
-.nav, .nav__btns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav,
+.nav__btns {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .nav__logo {
-    font-size: var(--h3-font-size);
-    font-weight: 700;
-    color: var(--title-color);
+	font-size: var(--h3-font-size);
+	font-weight: 700;
+	color: var(--title-color);
+	cursor: pointer;
 }
 
 .nav__logo span {
-    color: var(--primary-color);
+	color: var(--primary-color);
 }
 
 .nav__menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 100dvh;
-    background-color: var(--bg-color-alt);
-    opacity: 0.9;
-    z-index: 10;
-    transition: all 0.8s var(--transition);
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 100dvh;
+	background-color: var(--bg-color-alt);
+	opacity: 0.9;
+	z-index: 10;
+	transition: all 0.8s var(--transition);
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100dvw;
+	height: 100dvh;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 10;
+	transition: all 0.8s var(--transition);
+    backdrop-filter: blur(5px);
 }
 
 .show-menu {
-    width: 512px;
+	width: 512px;
 }
 
 .nav__data {
-    padding: 80px 84px 0 154px;
-    margin: auto;
-    width: 100%;
+	padding: 80px 84px 0 154px;
+	margin: auto;
+	width: 100%;
 }
 
 .nav__list {
-    margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .nav__list li {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .nav__link {
-    color: var(--title-color);
-    font-size: var(--h5-font-size);
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s var(--transition);
+	color: var(--title-color);
+	font-size: var(--h5-font-size);
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.3s var(--transition);
 }
 
 .active,
 .nav__link:hover {
-    color: var(--primary-color);
+	color: var(--primary-color);
 }
 
 .header__socials {
@@ -99,57 +113,70 @@
 }
 
 .nav__btns {
-    column-gap: 40px;
+	column-gap: 40px;
 }
 
 .theme__toggler {
-    font-size: var(--h4-font-size);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.5s var(--transition);
+	font-size: var(--h4-font-size);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	margin-top: 3px;
+	position: relative;
+	z-index: 100;
+}
+
+.theme__icons {
+	height: 1.7rem;
+	width: 1.7rem;
+	transition: all 0.5s var(--transition);
+	fill: var(--title-color);
+}
+
+.theme__icons:hover {
+	fill: var(--primary-color);
 }
 
 .nav__toggle {
-    width: 28px;
-    height: 30px;
-    cursor: pointer;
-    position: relative;
-    z-index: 100;
+	width: 28px;
+	height: 30px;
+	cursor: pointer;
+	position: relative;
+	z-index: 100;
 }
 
 .nav__toggle span {
-    position: absolute;
-    left: 0%;
-    width: 100%;
-    height: 2px;
-    background-color: var(--title-color);
-    transition: all 0.3s var(--transition);
+	position: absolute;
+	left: 0%;
+	width: 100%;
+	height: 2px;
+	background-color: var(--title-color);
+	transition: all 0.3s var(--transition);
 }
 
 .nav__toggle span:nth-child(1) {
-    top: 8px;
+	top: 8px;
 }
 
 .nav__toggle span:nth-child(2) {
-    bottom: 4px;
+	bottom: 4px;
 }
 
 .nav__toggle span:nth-child(3) {
-    bottom: 12px;
+	bottom: 12px;
 }
 
 .animate-toggle span:nth-child(1) {
-    top: 14px;
-    transform: rotate(45deg);
+	top: 14px;
+	transform: rotate(45deg);
 }
 
 .animate-toggle span:nth-child(2) {
-    top: 14px;
-    transform: rotate(-45deg);
+	top: 14px;
+	transform: rotate(-45deg);
 }
 
 .animate-toggle span:nth-child(3) {
-    opacity: 0;
+	opacity: 0;
 }
