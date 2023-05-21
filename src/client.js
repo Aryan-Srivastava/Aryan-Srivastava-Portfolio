@@ -1,6 +1,5 @@
 import { createClient } from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
-import sanityCacheAdapter from "./sanityCacheAdapter";
 
 export const client = createClient({
 	projectId: import.meta.env.VITE_SANITY_PROJECT_ID,
@@ -8,10 +7,6 @@ export const client = createClient({
 	apiVersion: "2022-02-01",
 	useCdn: true,
 	token: import.meta.env.VITE_SANITY_TOKEN,
-	cache: {
-		...sanityCacheAdapter,
-		staleWhileRevalidate: 15 * 60 * 1000,
-	},
 });
 
 const builder = imageUrlBuilder(client);
