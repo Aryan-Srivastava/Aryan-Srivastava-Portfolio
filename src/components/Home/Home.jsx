@@ -38,6 +38,7 @@ const Home = () => {
 						href="https://www.linkedin.com/in/aryan-sri"
 						className="home__social-link"
 						aria-label="LinkedIn"
+						title="LinkedIn"
 					>
 						<svg className="svg__icons">
 							<use href="sprite.svg#icon-linkedin"></use>
@@ -47,6 +48,7 @@ const Home = () => {
 						href="https://github.com/Aryan-Srivastava"
 						className="home__social-link"
 						aria-label="Github"
+						title="Github"
 					>
 						<svg className="svg__icons">
 							<use href="sprite.svg#icon-github"></use>
@@ -56,9 +58,20 @@ const Home = () => {
 						href="https://twitter.com/Aryan_Sri_"
 						className="home__social-link"
 						aria-label="Twitter"
+						title="Twitter"
 					>
 						<svg className="svg__icons">
 							<use href="sprite.svg#icon-twitter"></use>
+						</svg>
+					</a>
+					<a
+						href="https://aryansri.hashnode.dev/"
+						className="home__social-link"
+						aria-label="Hashnode"
+						title="Hashnode"
+					>
+						<svg className="svg__icons">
+							<use href="sprite.svg#icon-hashnode"></use>
 						</svg>
 					</a>
 				</div>

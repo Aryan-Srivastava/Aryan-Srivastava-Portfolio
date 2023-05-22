@@ -105,6 +105,7 @@ const Header = () => {
 								href="https://www.linkedin.com/in/aryan-sri"
 								className="header__social-link"
 								aria-label="LinkedIn"
+								title="LinkedIn"
 							>
 								<svg className="svg__icons">
 									<use href="sprite.svg#icon-linkedin"></use>
@@ -114,6 +115,7 @@ const Header = () => {
 								href="https://github.com/Aryan-Srivastava"
 								className="header__social-link"
 								aria-label="Github"
+								title="Github"
 							>
 								<svg className="svg__icons">
 									<use href="sprite.svg#icon-github"></use>
@@ -123,9 +125,20 @@ const Header = () => {
 								href="https://twitter.com/Aryan_Sri_"
 								className="header__social-link"
 								aria-label="Twitter"
+								title="Twitter"
 							>
 								<svg className="svg__icons">
 									<use href="sprite.svg#icon-twitter"></use>
+								</svg>
+							</a>
+							<a
+								href="https://aryansri.hashnode.dev/"
+								className="header__social-link"
+								aria-label="Hashnode"
+								title="Hashnode"
+							>
+								<svg className="svg__icons">
+									<use href="sprite.svg#icon-hashnode"></use>
 								</svg>
 							</a>
 						</motion.div>
