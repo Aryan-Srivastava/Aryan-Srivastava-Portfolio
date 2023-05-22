@@ -48,7 +48,6 @@
 	border-radius: 5px;
 }
 
-
 .divider {
 	margin-block: 2rem;
 	border: 1px solid var(--primary-color);
@@ -77,4 +76,36 @@
 	font-family: monospace;
 	font-size: 14px;
 	padding: 1rem;
+}
+
+@media (max-width: 620px) {
+	.SingleBlog__container {
+		padding-top: 5rem;
+	}
+	.blog__header {
+		font-size: var(--h3-font-size);
+	}
+	.about__blog {
+		flex-direction: column;
+	}
+	.about__blog > * {
+		margin: 0.5rem 0;
+	}
+	.blog__desc {
+		font-size: var(--larger-font-size);
+		margin: 1rem 0;
+	}
+	.divider {
+		margin-block: 1rem;
+	}
+	.my-bullet-li-class,
+	.my-number-li-class {
+		margin-left: 1rem;
+		font-size: var(--larger-font-size);
+		margin-block: 0.5rem;
+	}
+	.my-code-block-class {
+		font-size: 12px;
+		padding: 0.5rem;
+	}
 }
