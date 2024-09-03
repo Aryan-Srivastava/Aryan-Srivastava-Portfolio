@@ -25,12 +25,12 @@ const Home = () => {
 					<span>Aryan</span> Srivastava
 				</h1>
 				<p className="home__job">
-					<span className="text-cs">I Am a</span> <b>Web Developer</b>
+					<span className="text-cs">I Am a</span> <b>Software Developer</b>
 				</p>
 
 				<p className="home__text">
-					From India. I've been working as a web developer for a year
-					now. I love working with React and Node.js.
+					From India with a work experience of more than 2 years.<br />
+					I particularly enjoy working with React and Node.js.
 				</p>
 
 				<div className="home__socials">

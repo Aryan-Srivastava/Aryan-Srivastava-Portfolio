@@ -18,7 +18,11 @@ const Card = (props) => {
 					<h3 className="resume__title">{props.subtitle}</h3>
 					<span className="resume__date text-cs">{props.date}</span>
 				</div>
-				<p className="resume__desciption">{props.description}</p>
+				{props.category === "education" ? (
+					<p className="resume__desciption">{props.description}</p>
+				) : (
+					<p className="resume__desciption experience__description" dangerouslySetInnerHTML={{ __html: props.description }}></p>
+				)}
 			</div>
 		</div>
 	);

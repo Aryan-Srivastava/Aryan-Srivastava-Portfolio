@@ -164,10 +164,9 @@ export const cv = [
 		subtitle: "School of Management and Sciences",
 		date: "2019 - 2023",
 		description:
-			"8.19 CGPA (Till 7th Semester)",
+			"8.19 CGPA",
 		category: "education",
 	},
-
 	{
 		id: 2,
 		title: "Intermediate",
@@ -177,14 +176,19 @@ export const cv = [
 			"69.4%",
 		category: "education",
 	},
-
 	{
-		id: 3,
-		title: "High School",
-		subtitle: "Seventh Day Adventist Inter College",
-		date: "2016 - 2017",
-		description:
-			"71%",
-		category: "education",
-	}
+		id: 4,
+		title: "QSS Technosoft SWE",
+		subtitle: "Software Engineer",
+		date: "Apr 2023 - current",
+		description: 
+			"<p><i>Key Responsibilities and Notable works.</i></p> \
+			<ul> \
+				<li><b>React & Node.js Development:</b> Contributed to key modules, including report generation, appointments scheduling, and user management. Developed APIs with Node.js and CouchDB.</li> \
+				<li><b>DICOM Projects:</b> Delivered healthcare projects using DotNet and C#, meeting tight deadlines, despite initial unfamiliarity with the technology.</li> \
+				<li><b>AWS Support:</b> Monitored and maintained AWS services, ensuring system stability.</li> \
+			</ul>\
+			<p><b>Technologies Used:</b> React, Node.js, CouchDB, DotNet, C#, DCM4CHEE, AWS</p>  ",
+		category: "experience",
+	}		
 ];

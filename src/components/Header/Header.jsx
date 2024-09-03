@@ -3,6 +3,7 @@ import "./Header.modules.css";
 import { useEffect, useState } from "react";
 import { Link, animateScroll } from "react-scroll";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const getStorageTheme = () => {
 	let theme = "radioactive";
@@ -18,8 +19,11 @@ const Header = () => {
 	const [showNavbar, setShowNavbar] = useState(true);
 	const [theme, setTheme] = useState(getStorageTheme());
 
+	const navigate = useNavigate();
+
 	const scrollTop = () => {
 		animateScroll.scrollToTop();
+		navigate("/");
 	};
 
 	const changeNav = () => {

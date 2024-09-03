@@ -41,7 +41,7 @@ const Resume = () => {
 						})}
 					</motion.div>
 				</div>
-				{/* <div className="resume__group">
+				<div className="resume__group">
 					<h3 className="resume__heading">
 						<span>Exp</span>erience
 					</h3>
@@ -52,7 +52,7 @@ const Resume = () => {
 							}
 						})}
 					</div>
-				</div> */}
+				</div>
 			</div>
 		</section>
 	);

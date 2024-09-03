@@ -145,6 +145,12 @@
 	.contact__container {
 		grid-template-columns: 1fr;
 	}
+
+	.resume__container {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 2rem;
+	}
 }
 
 @media screen and (max-width: 480px) {

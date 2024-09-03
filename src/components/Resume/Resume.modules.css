@@ -4,7 +4,7 @@
 
 .resume__container {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 }
 
@@ -14,7 +14,7 @@
     padding-bottom: 20px;
 }
 
-span {
+.resume__icon {
     color: var(--primary-color);
 }
 
@@ -92,4 +92,23 @@ span {
 
 .resume__description {
     margin-block: 20px;
+}
+
+.experience__description {
+    margin-top: 0.8rem;
+}
+
+.experience__description p {
+    margin-bottom: 0.5rem;
+}
+
+.experience__description ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 1rem;
+}
+
+.experience__description li {
+    margin-bottom: 8px;
+    line-height: 1.4;
 }
