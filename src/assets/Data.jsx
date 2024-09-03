@@ -178,7 +178,7 @@ export const cv = [
 	},
 	{
 		id: 4,
-		title: "QSS Technosoft SWE",
+		title: "QSS Technosoft",
 		subtitle: "Software Engineer",
 		date: "Apr 2023 - current",
 		description: 
