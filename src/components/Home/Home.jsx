@@ -1,6 +1,6 @@
 import "./Home.modules.css";
 import shape1 from "../../assets/assets/shape-1.png";
-import CV from "../../assets/assets/Aryan_CV.pdf";
+import CV from "../../assets/assets/Aryan_Srivastava_Resume.pdf";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
 				</p>
 
 				<p className="home__text">
-					From India with a work experience of more than 2 years.<br />
+					From India with a work experience of more than 2 years and 7 months.<br />
 					I particularly enjoy working with React and Node.js.
 				</p>
 
