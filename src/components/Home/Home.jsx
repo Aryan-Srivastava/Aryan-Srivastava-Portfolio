@@ -29,7 +29,7 @@ const Home = () => {
 				</p>
 
 				<p className="home__text">
-					From India with a work experience of more than 2 years and 7 months.<br />
+					From India with a work experience of more than 3 years and 4 months.<br />
 					I particularly enjoy working with React and Node.js.
 				</p>
 
